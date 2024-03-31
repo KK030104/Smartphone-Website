@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Login_signup.css" />
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <a href="Home.html" class="headingval" data-value="clickNcarry" >clickNcarry</a>
+        </div>
+    </div>
+    <div id="signup_box">
+        <div id="Signup_heading">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="allinputs">
+            <form  method="post">
+            <input name="s_email" id="l_email" type="email" placeholder="Email Here"  >
+            <span id="email_err"></span>
+            <input name="l_password" id="l_password" type="password" placeholder="Password"onclick="val_s_mail()" ononinput="val_pass()">
+            
+            <div id="go_login">
+            <a href="signup.html">Dont have an account?<br />Please signup!</a>
+            </div>
+            <div id="btn_box_signup">
+                <button type="submit" class="btn_log" id="btn_login">LOGIN</button>
+            </div>
+        </form>
+        
+        </div>
+        
+    </div>
+    </div>
+    <footer class="footer">
+        <p>@ 2024 clickNcarry .All rights reserved</p>
+    </footer>
+</body>
+<!-- <script src="./javascripts/signup.js"></script> -->
+<script src="./javascripts/login.js"></script>
+
+</html>

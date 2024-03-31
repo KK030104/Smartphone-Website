@@ -1,0 +1,239 @@
+::placeholder{
+    text-align: center;
+    font: futura;
+}
+body{
+    background-color: rgb(248, 246, 246);
+  
+}
+.headingval{
+  text-decoration: none;
+  margin: 1%;
+  color: white;
+  font-size: 5vh;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+}
+.logo{
+  text-align: center;
+  width: 100%;
+}
+.topnav {
+ 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  background-color:rgb(62, 61, 61);
+  
+}
+.btn_log{
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px 0px 20px 0px;
+  margin: 10px;
+  background-color: rgb(251, 252, 251);
+  outline: none;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease-in;
+}
+.btn_log:hover{
+border: 1px solid rgb(255, 255, 255);
+color: aliceblue;
+background-color: black;
+transition: 0.5s ease-in-out;
+cursor: pointer;
+
+}
+#nam_err,#email_err,#cont_err ,#pass_err, #vpass_err,#error_msg{
+  width: 100%;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  color: red;
+}
+.other_nav{
+  padding: 2%;
+}
+#signup_box{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin: 0 auto;
+}
+body.fade-in #signup_box {
+  opacity: 1;
+  transform: translateY(0);
+}
+#Signup_heading h1{
+  letter-spacing: 10px;
+  margin-top: 50px;
+  font-family: 'Kanit', sans-serif;
+    font-size: 4vw;
+    color: rgb(0, 0, 0)
+}
+.allinputs{
+    
+    display: flex;
+    width: 20%;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+}
+.allinputs input{
+    width: 100%;
+    height: 40px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px 0px 20px 0px;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+}
+.btn_signup{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px 0px 20px 0px;
+    margin: 10px;
+    background-color: rgb(251, 252, 251);
+    outline: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease-in;
+}
+.btn_signup:hover{
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+#btn_box_signup{
+    margin-top: 30px;
+}
+#go_login{
+  width: 100%;
+  text-align: center;
+}
+#go_login a{
+  
+  color: black;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+}
+.footer{
+  
+  width: 100%;
+  bottom: 0px;
+  color: rgb(54, 54, 54);
+  text-align: center;
+}
+@media (max-width: 700px) {
+  
+  .headingval{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+  .logo{
+    margin-left: 10px;
+  }
+  
+  #signup_box{
+    opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-around;
+      margin: 0 auto;
+  }
+  body.fade-in #signup_box {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #Signup_heading h1{
+    margin-top: 50px;
+    font-family: 'Kanit', sans-serif;
+      font-size: 9vw;
+      color: rgb(0, 0, 0)
+  }
+  #go_login{
+    width: 100%;
+    text-align: center;
+  }
+  #go_login a{
+    
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+  }
+  .allinputs{
+      
+      display: flex;
+      width: 40%;
+      flex-direction:row;
+      justify-content: space-around;
+      align-items: center;
+      
+      
+      
+  }
+  .allinputs input{
+      width: 100%;
+      height: 40px;
+      border: solid 1px rgb(0, 0, 0);
+      border-radius: 20px 0px 20px 0px;
+      margin: 10px;
+      outline: none;
+      text-align: center;
+  }
+  .btn_signup{
+      margin-top: 50px;
+      width: 100%;
+      height: 50px;
+      border-radius: 20px 0px 20px 0px;
+      margin: 10px;
+      background-color: rgb(255, 255, 255);
+      outline: none;
+      
+      color: rgb(0, 0, 0);
+      transition: 0.5s ease-in;
+  }
+  .btn_signup:hover{
+    border: 1px solid rgb(255, 255, 255);
+    color: aliceblue;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #btn_box_signup{
+      margin-top: 30px;
+  }
+}
+@media (min-width: 701px) {
+  .allinputs{
+      
+  display: flex;
+  width: 40%;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
+}
+@media (min-width: 1300px) {
+  .allinputs{
+      
+  display: flex;
+  width: 20%;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
+}

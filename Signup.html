@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Login_signup.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <a href="Home.html" class="headingval" data-value="clickNcarry" >clickNcarry</a>
+        </div>
+        
+        <!-- <input class="searchbar" type="search" placeholder="search">
+        <button class="btn">search</button> -->
+    </div>
+    <div class="container"> <div id="signup_box">
+        <div id="Signup_heading">
+            <h1>SIGN UP</h1>
+        </div>
+        <div class="allinputs">
+            <form  method="post" >
+            <input name="s_name" id="s_name" type="text" value="" placeholder="Enter Your name here" oninput="val_name(this)" >
+            <span id="nam_err"></span>
+            <input name="s_email" id="s_email" type="email" placeholder="Email Here" >
+            <span id="email_err"></span>
+            <input name="s_contact" id="s_contact" type="tel" placeholder="Contact Number Here" oninput="val_num(this)" onclick="val_mail()">
+            <span id="cont_err"></span>
+            <input name="S_password" id="s_pass" type="password" placeholder="Password"oninput="val_pass(this)">
+            <span id="pass_err"></span>
+            <input name="S_c_password" id="s_c_pass" type="password" placeholder="Retype password"oninput="val_cpass(this)">
+            <span id="vpass_err"></span>
+            <div id="btn_box_signup">
+                <button class="btn_signup" id="signup_btn">SIGNUP</button>
+            </div>
+            <div id="go_login">
+                <div id="error_msg" ></div>
+            <a href="Login.html">I already have an account</a>
+            </div>
+        </form>
+        
+        </div>
+        
+    </div>
+    </div>
+   
+    <footer class="footer">
+        <p>@ 2024 clickNcarry .All rights reserved</p>
+    </footer>
+</body>
+<script src="./javascripts/signup.js"></script>
+</html>

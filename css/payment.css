@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 246, 246);
+}
+
+
+.headingval {
+    text-decoration: none;
+    margin: 1%;
+    color: white;
+    font-size: 5vh;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    width: 100%;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(62, 61, 61);
+}
+
+.card {
+    width: 75%;
+    
+    margin: 50px auto;
+    display: flex;
+    
+}
+
+.first {
+    width: 50%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+.card_heading p {
+    padding-top: 2px;
+    padding-right: 149px;
+}
+
+.card_ip {
+    border-radius: 1rem;
+    margin-top: 100px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 3px grey;
+
+    width: 80%;
+    
+
+}
+
+.atm-card {
+    padding: 10px;
+}
+
+.card-icons {
+    display: flex;
+    width: 5%;
+    margin: 20px auto;
+
+    align-items: flex-start;
+
+    padding-left: 20px;
+}
+
+.card-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 13px;
+}
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 20px;
+    
+}
+.card-details-box input{
+    font-size: 15px;
+    border: none;
+
+}
+.card-details input{
+    width: 60px;
+}
+
+.second{
+    width: 50%;
+    
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+
+}
+.personal-info-box input{
+    width: 90%;
+    height: 40px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px 0px 20px 0px;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+}
+
+
+.dropdown{
+    width: 100%;
+    
+    position: relative;
+    margin: 10px;
+
+}
+
+.select{
+    
+    width: 90%;
+    height: 40px;
+    
+    color:  #999;
+    display:flex;
+    
+    justify-content: center;
+    gap: 155px;
+    align-items: center;
+    
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px 0px 20px 0px;
+    
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.selected{
+    
+    margin-left: 127px;
+    font-size: 15px;
+}
+
+.select:hover{
+    background: rgb(104, 104, 105);
+    color: white;
+
+    
+}
+
+.caret{
+    width:0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #100e0e;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: white;
+   
+    border-radius: 0.5em;;
+    color: black;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    max-height: 150px; 
+    overflow-y: auto;
+
+
+}
+
+
+.selected.selected-black {
+    color: black;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+
+
+}
+.active{
+    background: black;
+    color: white;
+}
+.menu.menu-open{
+    opacity: 1;
+    display: block;
+}
+
+
+#paybtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+    margin-bottom: 50px;
+    
+}
+
+.paybutton {
+    width: 250px; 
+    height: 50px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold; 
+    transition: 0.5s ease-in;;
+    outline: none;
+    cursor: pointer;
+
+    
+
+
+}
+
+.paybutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.cvv{
+    position: relative;
+}
+
+.cvv .error-message {
+    
+    font-size: 14px;
+    position: absolute;
+    top: -4px;
+    left: 84px; 
+    text-align: left;
+    margin-top: 5px;
+    color: red;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-icons img{
+        padding-left: 4px;
+    }
+    .card_heading p{
+        padding-right:34px
+    }
+
+    .first, .second {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card_ip {
+        width: 100%;
+    }
+
+    .select {
+        width: 92%;
+        gap: 74px;
+    }
+    .selected{
+        margin-left: 84px;
+    }
+
+    .menu {
+        width: calc(100% - 20px); 
+    }
+
+    .caret {
+        margin-right: 5px;
+    }
+}
+
+

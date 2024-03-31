@@ -1,0 +1,734 @@
+body {
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  background-color: #3D3B40;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.company-name {
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.nav-right {
+  margin-left: auto;
+  /* Pushes the cart icon to the right */
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.original-price {
+  color: #999;
+  /* Faint color for original price */
+}
+
+.navbar {
+  background-color: #1D5D9B;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ddd;
+  /* Background color for the logo */
+  padding: 5px 10px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Add rounded corners for a neat appearance */
+}
+
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* styling search bar */
+.search {
+  margin-top: 5px;
+}
+
+.search input {
+  width: 60%;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.btn {
+  background-color: black;
+  height: 40px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  color: black;
+  background: linear-gradient(grey, white);
+}
+
+.slideshow-container {
+  max-width: 100%;
+  height: 350px;
+  position: relative;
+  margin: 30px;
+}
+
+.slideshow-container img {
+  width: 40%;
+  height:350px;
+}
+.cart {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  /* Dark background color */
+  color: white;
+  /* White text color */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  /* Hide initially */
+  z-index: 1;
+  /* Ensure it's above other elements */
+}
+
+.nav-right:hover .cart {
+  display: block;
+  /* Show on hover */
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+   animation-duration: 3s; 
+}
+
+ @keyframes fade {
+  from {
+    opacity:.9
+  }
+
+  to {
+    opacity:1
+  }
+} 
+
+h1 {
+  font-size: 2.5em;
+  /* Adjust the font size as needed */
+  margin: 0;
+  color: #333;
+  /* Choose your desired color */
+  font-family: 'Cursive', sans-serif;
+  /* Choose a stylish font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add a subtle text shadow */
+  transition: color 0.3s ease;
+  /* Add a smooth color transition */
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  /* Adjust the color as needed */
+  line-height: 1.6;
+  /* Adjust the line height as needed */
+}
+
+.rating {
+  font-size: 20px;
+}
+
+.stars {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.star {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.one {
+  color: rgb(255, 0, 0);
+}
+
+.two {
+  color: rgb(255, 106, 0);
+}
+
+.three {
+  color: rgb(251, 255, 120);
+}
+
+.four {
+  color: rgb(255, 255, 0);
+}
+
+.five {
+  color: rgb(24, 159, 14);
+}
+
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reviews {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card_image img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.card_image {
+  width: 200px;
+  height: 200px;
+  float: center;
+  margin: 10px 80px 10px 80px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px 3px grey;
+}
+
+.card_title {
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
+
+/* table  */
+table tr td {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-width: 0;
+  justify-content: center;
+
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 95% auto;
+  text-align: center;
+  align-items: center;
+}
+
+.searchbar {
+  margin: 10px;
+  width: 70%;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.searchbar:hover {
+  background: linear-gradient(90deg, rgb(228, 228, 231), white);
+}
+
+.btn {
+
+  width: 20%;
+  border-radius: 15px;
+  background: rgb(7, 7, 7);
+  color: white;
+  border: 1px solid grey;
+  box-shadow: 5px 5px 5px grey;
+  transition: background 0.3s ease;
+}
+
+
+.topnav {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  background-color: rgb(24, 25, 25);
+
+}
+
+.topnav a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.topnav a:hover {
+  color: rgb(62, 61, 61);
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card_image img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.card_image {
+  width: 200px;
+  height: 200px;
+  float: center;
+  margin: 10px 80px 10px 80px;
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px 3px grey;
+}
+
+.card_content {
+  padding: 1rem;
+
+
+}
+
+.card_title {
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
+
+.discription {
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.p_image img {
+  height: 80vh;
+  width: 100%;
+  background-color: powderblue;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-item {
+
+  width: 20%;
+  align-items: center;
+  border-radius: 15px;
+
+  margin-left: 40%;
+  margin-top: 4%;
+
+
+
+}
+
+.carousel-control-next-icon {
+  background-color: grey;
+}
+
+.carousel-control-prev-icon {
+  background-color: grey;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.carousel-indicators {
+  margin-top: 100%;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.company-name {
+  color: white;
+  font-family: 'Varela Round';
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 1.3rem;
+}
+
+.nav-right {
+  margin-left: auto;
+  /* Pushes the cart icon to the right */
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.original-price {
+  color: #999;
+  /* Faint color for original price */
+}
+
+.navbar {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ddd;
+  /* Background color for the logo */
+  padding: 5px 10px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Add rounded corners for a neat appearance */
+}
+
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #D8D9DA;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+
+
+.rating {
+  font-size: 20px;
+}
+
+.stars {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.star {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.one {
+  color: rgb(255, 0, 0);
+}
+
+.two {
+  color: rgb(255, 106, 0);
+}
+
+.three {
+  color: rgb(251, 255, 120);
+}
+
+.four {
+  color: rgb(255, 255, 0);
+}
+
+.five {
+  color: rgb(24, 159, 14);
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  align-items: center;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.reviews {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* 
+.review {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+} */
+
+.review p {
+  margin: 0;
+}
+
+.img3 {
+  width: 100%;
+}
+
+.dot {
+  background-color: black;
+  color: black;
+}
+
+.kk {
+  width: 95%;
+  padding: 2%;
+  margin-top: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.card_content {
+  text-align: center;
+  align-items: center;
+}
+
+.description p {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
+}
+
+.description h1 {
+  width: 65%;
+  align-items: center;
+  text-align: center;
+}
+
+.specifications {
+
+  text-align: center;
+}
+
+.kk_noobda {
+  align-items: center;
+  text-align: center;
+  padding-left: 42%;
+  padding-top: 2%;
+}
+
+.slideshow-container{
+  height: 80vh;
+}
+.mySlides img{
+  height:80vh;
+}

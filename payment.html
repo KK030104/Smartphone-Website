@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/payment.css" />
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <a href="Home.html" class="headingval" data-value="clickNcarry">clickNcarry</a>
+        </div>
+    </div>
+    <div>
+    <div class="card">
+        <section class="first">
+            <div class="card_heading">
+                <h2>Card Information</h2>
+                <p>Indicates the details of the card from which money will be debited</p>
+
+
+            </div>
+            <div class="card_ip">
+
+
+                <div class="atm-card">
+                    <div class="card-icons">
+
+
+                        <img src="photos/visa.png" alt="Visa Icon">
+                        <img src="photos/gpay.png" alt="GPay Icon">
+                        <img src="photos/mastercard.png" alt="mastercard Icon">
+                    </div>
+                    <div class="card-details-box">
+                        <div class="card-number">
+                            <p>Card Number</p>
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                            <hr>
+                        </div>
+                        <div class="card-details">
+                            <div class="expiry">
+                                <p>Expiry</p>
+                                <input type="text" placeholder="MM / YY">
+                            </div>
+                            <div class="cvv">
+                                <p>CVV</p>
+                                <input type="text" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="second">
+
+
+            <div class="personal-info-box">
+                <h2>Personal Information</h2>
+                <div class="input-row">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="input-row">
+
+                    <div class="dropdown">
+                        <div class="select">
+                            <span id="selecteCountry" class="selected">Country</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+
+                            <li>Afghanistan</li>
+                            <li>Argentina</li>
+                            <li>Australia</li>
+                            <li>Brazil</li>
+                            <li>Canada</li>
+                            <li>China</li>
+                            <li>Denmark</li>
+                            <li>Egypt</li>
+                            <li>France</li>
+                            <li>Germany</li>
+                            <li>Greece</li>
+                            <li class="active">India</li>
+                            <li>Indonesia</li>
+                            <li>Italy</li>
+                            <li>Japan</li>
+                            <li>Kenya</li>
+                            <li>Malaysia</li>
+                            <li>Mexico</li>
+                            <li>Netherlands</li>
+                            <li>New Zealand</li>
+                            <li>Nigeria</li>
+                            <li>Norway</li>
+                            <li>Pakistan</li>
+                            <li>Peru</li>
+                            <li>Poland</li>
+                            <li>Portugal</li>
+                            <li>Russia</li>
+                            <li>Saudi Arabia</li>
+                            <li>South Africa</li>
+                            <li>South Korea</li>
+                            <li>Spain</li>
+                            <li>Sweden</li>
+                            <li>Switzerland</li>
+                            <li>Thailand</li>
+                            <li>Turkey</li>
+                            <li>United Kingdom</li>
+                            <li>United States</li>
+                            <li>Uruguay</li>
+                            <li>Vietnam</li>
+                            <li>Yemen</li>
+                            <li>Zambia</li>
+                            <li>Zimbabwe</li>
+
+
+                        </ul>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="Zipcode">
+                </div>
+                <div class="input-row">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-row">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+        <div id="paybtn">
+            <button class="paybutton">Pay</button>
+        </div>
+    </div>
+
+</body>
+<script src="javascripts/payment.js"></script>
+
+</html>
